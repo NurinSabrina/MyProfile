@@ -36,39 +36,128 @@
         <meta name="color-scheme" content="light dark">
         <link rel="stylesheet" href="css/index.css">
         <title>Hello World</title>
-    </head>
-    <body>
-        <div class ="header" style="background-color:yellowgreen; text-align:center; color:black;">
-        <h1>Nurin Sabrina Binti Azauddin</h1>
+        <style>
+        * {
+            max-width: 700px;
+            margin: auto;
+          }
+
+          div {
+            border-radius: 5px;
+          }
+          
+          #header {
+            height: 30px;
+            width: 100%;
+            background-color: #ffcccc;
+            position: fixed;
+          }
+          
+          #title {
+            margin-left: 3%;
+          }
+          
+          #footer {
+            height: 50px;
+            width: 100%;
+            background-color: #ffcccc;
+            clear: both;
+            position: relative;
+          }
+          
+          .stuff {
+            display: inline-block;
+            background-color: #f7d2f5;
+            width: 100%;
+            height: 1000px;
+          }
+          
+          .center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+          }
+
+          p,
+          li {
+            font-family: 'Cormorant Garamond';
+            margin-left: 3%;
+          }
+          
+          .head {
+            font-size: 20px;
+          }
+          
+          #name {
+            font-family: Sacramento;
+            float: right;
+            margin-top: 10px;
+            margin-right: 4%;
+          }
+          </style>
+        </head>
+        <body>
+        <div id="header"></div>
+        <div class="stuff">
+            <br><br>
+            <p>
+            <a href="index.html">
+            <img src="icon.jpg" alt="icon" width="40" height="40">
+            </a>
+            </p>
+            <h1>Profile Nurin Sabrina</h1>
+            <hr/>
+            <br>
+            <img src="nurin.JPG" alt="nurin" width="403" height="250" class="center">
+            <br>
+            <br>
+            <p class="head">Interests</p>
+            <br>
+            <ul>
+                <li>Cooking</li><br>
+                <li>Photography</li><br>
+                <li>Design</li><br>
+                <li>Programming</li><br>
+                <li>Computer Science</li><br>
+            </ul>
+            <br>
+            <p class="head">Skills</p>
+                <ul><br>
+                    <li>Web Design with HTML & CSS</li>
+                </ul><br>
+            <p class="head">Education</p>
+                <ul><br>
+                <a href="http://www.smkap.edu.my/">
+                <li>Sekolah Menengah Kebangsaan Agama Perempuan Kangar , Perlis</li>
+                </a>
+            <!--Link--><br>
+                <a href="http://www.kmp.matrik.edu.my/">
+                <li>Perlis Matriculation College</li>
+                </a>
+                <br>
+                <a href="https://www.umt.edu.my/">
+                <li>Universiti Malaysia Terengganu</li>
+                </a>
+                </ul>
+                <br>
+            <p class="head">Experience</p>
+                <ul><br>
+                <li>Student of Mobile Computing </li><br>
+                <li>Waiteress</li><br>
+                </ul>
+                <br>
+            <p class="head">Extracurriculars</p>
+                <ul><br>
+                <li>Sekretariat Rakan Muda</li><br>
+                <li>Photography Club</li><br>
+                </ul>
         </div>
-        <div class="column left" style="background-color:yellow;">
-            <img src="nurin.JPG" alt="nurin" width="150" height="200">
-            <p> My name is Nurin Sabrina Binti Azauddin . I am from Perlis the northern state in Malaysia . I am studying in University of Terengganu Malaysia </p>
-            <p>This is my University's History</p>
-            <p>
-                Universiti Malaysia Terengganu (UMT) started as the Universiti Sains dan Teknologi Malaysia College (KUSTEM) with a Fisheries and Ocean Science Center in 1979,
-                which provides training facilities for students of the Fisheries and Ocean Science Program in addition to providing research facilities for lecturers.
-                
-                Through the restructuring of academic programs at UPM, the entire Faculty of Fisheries and Ocean Science has been moved to Terengganu and given a new name, 
-                the Faculty of Applied Science and Technology (FSGT) from June 1996. 
-                Also established are the Faculty of Science and Professional Arts (FSSI) and the School of Matriculation (PPM).
-                
-                From June 1996, this campus has been recognized (internally by UPM) as a center of responsibility and named Universiti Putra Malaysia Terengganu Branch (UPMT) and
-                headed by a Rector (designate).
-            </p>
-            <p>
-                The Cabinet in its meeting on 5 May 1999 agreed to approve the proposed establishment of the Terengganu University College (KUT) based on
-                Universiti Putra Malaysia Fisheries and Ocean Science Center in Mengabang Telipot, Kuala Terengganu.
-                
-                The Terengganu University College (Corporation) Order 1999 (PUA 292) was passed by the Dewan Rakyat on 26 July 1999.
-                KUT is the Associated Campus of UPM and students will be awarded a degree from UPM. KUT was given autonomy as the University College of Terengganu on 1 May 2001.
-                
-                On 1 July 2001, KUT officially changed its name to Kolej Universiti Sains dan Teknologi Malaysia with the abbreviation KUSTEM.
-                
-                On 1 February 2007, Kolej Universiti Sains dan Teknologi Malaysia (KUSTEM) was upgraded to a full university and rebranded as Universiti Malaysia Terengganu (UMT).
-            </p>
-            </div>
+        <div id="footer">
+        <h2 id="name">Nurin</h2></div>
+        </div>
         <script src="cordova.js"></script>
         <script src="js/index.js"></script>
     </body>
 </html>
+
