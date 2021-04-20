@@ -36,6 +36,11 @@
         <meta name="color-scheme" content="light dark">
         <link rel="stylesheet" href="css/index.css">
         <style>
+        * {
+            max-width: 700px;
+            margin: auto;
+            }
+
        	    h1 {
             text-align: center;
             }
@@ -55,12 +60,60 @@
             background-color: #30D5C8;
             font-weight: bold;
             }
-        </style>
+          
+            div {
+            border-radius: 5px;
+            }
+          
+            #header {
+            height: 30px;
+            width: 100%;
+            background-color: #ffcccc;
+            position: fixed;
+            }
+          
+            #footer {
+            height: 50px;
+            width: 100%;
+            background-color: #ffcccc;
+            clear: both;
+            position: relative;
+            }
+          
+            .stuff {
+            display: inline-block;
+            background-color: #f7d2f5;
+            width: 100%;
+            height: 700px;
+            }
+
+            p {
+            font-family: 'Cormorant Garamond';
+            margin-left: 3%;
+            }
+
+            #name {
+            font-family: Sacramento;
+            float: right;
+            margin-top: 10px;
+            margin-right: 4%;
+            }
+          </style>
     </head>
-<body>
-    <h1>My Awesome 80's Movies Table</h1>
-    <div class="column left" style="background-color:yellow;">
-    <table class="center">
+    <body>
+    
+    <div id="header"></div>
+    <div class="stuff">
+        <br><br>
+            <p>
+            <a href="index.html">
+            <img src="icon.jpg" alt="icon" width="40" height="40">
+            </a>
+            </p>
+            <hr/>                    
+            <br>
+            <h1>My Movies Table</h1>
+        <table class="center">
         <tr>
             <th>Movie Name</th>
             <th>Year Released</th>
@@ -68,35 +121,38 @@
             <th>Comment</th>
         </tr>
         <tr>
-            <td>Hard Rock Zombies</td>
-            <td>1985</td>
-            <td>7</td>
-            <td>Not Bad..</td>
-        </tr>
-        <tr>
-            <td>The Wizard</td>
-            <td>1988</td>
+            <td>Avengers End Game</td>
+            <td>2019</td>
             <td>9</td>
             <td>Amazing!</td>
         </tr>
         <tr>
-            <td>Spinal Tap</td>
-            <td>1984</td>
-            <td>11</td>
-            <td>Awesome!</td>
+            <td>The Blind Side</td>
+            <td>2009</td>
+            <td>8</td>
+            <td>Good</td>
+        </tr>
+        <tr>
+            <td>The Nun</td>
+            <td>2018</td>
+            <td>7</td>
+            <td>Not Bad</td>
         </tr>
         <tr>
             <td colspan="2" rowspan="2">Want to Rate Your Favourite Movies? Go to &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
                 <br><span  style="color: red;">www.rateMyMovie.tipuje.my</span>
             </body>
             </td>
-            <td colspan="2"> The Best : <b>Spinal Trap</b>
+            <td colspan="2"> The Best : <b>Avengers End Game</b>
             </td>
         </tr>
         <tr>
-            <td colspan="2">Loser : <b>Hard Rock<br>Zombies</b></td>
+            <td colspan="2">Loser : <b>The Blind Side<br>The Nun</b></td>
         </tr>
     </table>
+    </div>
+    <div id="footer">
+    <h2 id="name">Nurin</h2></div>
     </div>
     <script src="cordova.js"></script>
     <script src="js/index.js"></script>
